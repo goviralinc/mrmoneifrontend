@@ -1,16 +1,13 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { AnimatePresence } from "framer-motion";
+import { Space_Grotesk } from '@next/font/google';
 import "./globals.css";
+import NavBar from "./components/Navbar";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'], // Add font weights you want to use
+  variable: '--font-space-grotesk', // Optional: Use for CSS variables
 });
 
 export const metadata: Metadata = {
@@ -26,9 +23,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${spaceGrotesk.variable} font-sans`}
       >
-        {children}
+        <AnimatePresence mode="wait">
+          <NavBar />
+          
+          {children}
+        </AnimatePresence>
+        
       </body>
     </html>
   );
