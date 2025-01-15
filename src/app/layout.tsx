@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import { AnimatePresence } from "framer-motion";
-import { Space_Grotesk } from '@next/font/google';
+import { Montserrat } from '@next/font/google';
 import "./globals.css";
-import NavBar from "./components/Navbar";
+import Navbar from "@/components/Navbar";
 
-const spaceGrotesk = Space_Grotesk({
+const montserrat = Montserrat({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700'], // Add font weights you want to use
-  variable: '--font-space-grotesk', // Optional: Use for CSS variables
+  weight: ['400', '500', '600', '700'], // Specify the font weights you want to use
+  variable: '--font-montserrat', // Optional: Use for CSS variables
 });
 
 export const metadata: Metadata = {
@@ -23,10 +23,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${spaceGrotesk.variable} font-sans`}
+        className={`${montserrat.variable} font-sans`}
       >
         <AnimatePresence mode="wait">
-          <NavBar />
+          <Navbar />
           
           {children}
         </AnimatePresence>

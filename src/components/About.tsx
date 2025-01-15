@@ -1,10 +1,10 @@
 "use client";
 
-import Button from "./Button";
+import Button from "./ui/Button";
 
 const About = () => {
     return (
-      <section className="py-8 bg-white text-center font-libre-franklin">
+      <section className="max-w-full py-8 bg-white text-center font-libre-franklin">
         <div className="container mx-auto px-6 md:px-12">
 
             <h2 className="text-4xl font-bold mb-6">

@@ -6,7 +6,7 @@ import GeneralElectricLogo from "../../public/General logo.png";
 
 const Partners = () => {
   return (
-    <section className="py-16 bg-white text-center font-libre-franklin">
+    <section className="max-w-full py-16 bg-white text-center font-libre-franklin">
       <div className="container mx-auto px-6 md:px-12">
         {/* Section Title */}
         <h2 className="text-29xl font-bold mb-8">

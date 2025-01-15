@@ -1,14 +1,14 @@
 "use client";
 
 import Image from "next/image";
-import SubNav from "../components/SubNav";
-import BuyCoinCard from "../components/BuyCoinCard";
-import Button from "../components/Button";
-import Logo from "../../public/logo.png";
+import SubNav from "@/components/SubNav";
+import BuyCoinCard from "@/components/BuyCoinCard";
+import Button from "@/components/ui/Button";
+import Logo from "../../../../public/logo.png";
 
 export default function TransactPage() {
     return (
-        <div className="bg-white">
+        <div className="max-w-full bg-white font-montserrat">
             {/* Main Container */}
             <div className="max-w-full mx-auto px-6 lg:px-8">
                 <div className="grid lg:grid-cols-2 gap-4">
@@ -44,7 +44,7 @@ export default function TransactPage() {
                             {/* Buttons */}
                             <div className="mt-16 flex mx-auto items-center space-x-8">
                                 <Button
-                                    text="Join the waitlist"
+                                    text="Whitepaper"
                                     variant="primary"
                                     size="xl"
                                     onClick={() => console.log("Join the waitlist clicked")}

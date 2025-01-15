@@ -3,7 +3,7 @@ import logo from "../../public/footer-logo.png"; // Replace with your logo file 
 
 const Footer = () => {
   return (
-    <footer className="bg-[#008EBA] text-gray-100 py-16 font-montserrat">
+    <footer className="max-w-full bg-[#008EBA] text-gray-100 py-16 font-montserrat">
         <div className="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-7 gap-8 py-8">
             {/* Logo and Tagline */}
             <div className="col-span-3 flex flex-col items-center mr-4">

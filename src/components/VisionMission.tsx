@@ -8,7 +8,7 @@ import BackgroundImg from "../../public/component2.png";
 const VisionMission = () => {
   return (
     <section 
-    className="py-16 font-libre-franklin bg-cover bg-no-repeat"
+    className="max-w-full py-16 font-libre-franklin bg-cover bg-no-repeat"
     style={{
       backgroundImage: `url(${BackgroundImg.src})`
     }}

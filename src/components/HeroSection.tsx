@@ -1,8 +1,8 @@
-import AnimatedText from "./AnimatedText";
+import AnimatedText from "./ui/AnimatedText";
 
 const HeroSection = () => {
     return (
-        <section className="bg-light-blue py-16 text-center">
+        <section className="max-w-full bg-light-blue py-16 text-center font-montserrat">
             <div className="container mx-auto px-6 md:px-12">
                 
                 <h1 className="text-77xl m-auto w-[90%]">

@@ -4,7 +4,7 @@ import GroupImg from "../../public/Group.png"
 
 const JoinWaitlist = () => {
   return (
-    <section className="bg-[#008EBA] text-gray-100 py-8 font-montserrat">
+    <section className="max-w-full bg-[#008EBA] text-gray-100 py-8 font-montserrat">
       <div className="container mx-auto px-6 md:px-12 text-center">
         {/* Header Section */}
         <h1 className="text-29xl font-bold mb-4">Join our Waitlist</h1>

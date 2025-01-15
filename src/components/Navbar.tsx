@@ -3,8 +3,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-import Button from './Button';
-import logo from "../public/logo.png"
+import Button from './ui/Button';
+import logo from "../../public/logo.png"
 
 const Navbar = () => {
   return (

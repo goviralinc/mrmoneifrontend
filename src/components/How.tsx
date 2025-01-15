@@ -54,7 +54,7 @@ const How = () => {
   };
 
   return (
-    <section className="py-32 bg-white font-libre-franklin">
+    <section className="max-w-full py-32 bg-white font-libre-franklin">
       <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-start">
         {/* Left Section */}
         <div className="flex-1 items-center justify-center w-[50%] mx-auto py-24">
